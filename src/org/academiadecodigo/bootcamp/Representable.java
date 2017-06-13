@@ -7,7 +7,6 @@ public interface Representable {
 
 
 
-
     int getX();
     int getY();
 

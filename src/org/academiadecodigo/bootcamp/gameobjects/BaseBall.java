@@ -1,25 +1,48 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
 import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.bootcamp.Field.FieldPosition;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BaseBall implements Movable, Jumpable, Representable, Pickable, FieldPosition{
+public class BaseBall extends GameObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
 
+    private boolean collision;
+    private DirectionTypes direction;
 
+    public BaseBall(RepresentablePics picture) {
+        super(picture);
+    }
 
-    @Override
-    public void jump(int heigth, int slope) {
-
+    public void checkCollision(){
 
 
     }
 
     @Override
-    public Direction getDirection() {
-        return null;
+    public void jump(int heigth, int slope) {
+
+        int currentY;
+        for (int i = getX(); collision ; i++) {
+
+            currentY = i / slope - heigth;            //FÓRMULA DA PARABOLA
+            setY(currentY);
+
+            checkCollision();                       //VAI CHECKANDO SEMPRE SE CHOCA COM ALGUM OBJECTO
+        }
+
+    }
+
+    private void setY(int newY){
+
+    }
+
+
+    @Override
+    public DirectionTypes getDirectionType() {
+        return this.direction;
     }
 
     @Override
@@ -39,7 +62,7 @@ public class BaseBall implements Movable, Jumpable, Representable, Pickable, Fie
 
     @Override
     public boolean getCollision() {
-        return false;
+        return collision;
     }
 
     @Override

@@ -10,6 +10,7 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
 
 
     private boolean collision;
+    private DirectionTypes direction;
 
     public void checkCollision(){
 
@@ -20,7 +21,6 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
         super(picture);
     }
 
-    private DirectionTypes direction;
 
     @Override
     public DirectionTypes getDirectionType() {
@@ -61,6 +61,14 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
         return collision;
     }
 
+
+    @Override
+    public void move(MouseEvent mouseEvent) {
+
+    }
+/*
+   ____________ POR AGORA ESTÃO IMPLEMENTADOS NA CLASSE REPRESENTABLEPICS ___________
+ */
     @Override
     public int getX() {
         return 0;
@@ -73,11 +81,6 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
 
     @Override
     public void show() {
-
-    }
-
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
     }
 }

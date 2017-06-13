@@ -7,6 +7,12 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  * Created by codecadet on 13/06/2017.
  */
 public class CannonBall extends GameObject implements Movable, Jumpable, Representable, Pickable {
+
+
+    public CannonBall(RepresentablePics picture) {
+        super(picture);
+    }
+
     @Override
     public void jump(int heigth, int slope) {
 
@@ -14,7 +20,7 @@ public class CannonBall extends GameObject implements Movable, Jumpable, Represe
 
 
     @Override
-    public Direction getDirection() {
+    public DirectionTypes getDirectionType() {
         return null;
     }
 
