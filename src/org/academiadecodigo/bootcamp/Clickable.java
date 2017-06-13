@@ -6,4 +6,5 @@ package org.academiadecodigo.bootcamp;
 public interface Clickable {
 
 
+    void click();
 }
