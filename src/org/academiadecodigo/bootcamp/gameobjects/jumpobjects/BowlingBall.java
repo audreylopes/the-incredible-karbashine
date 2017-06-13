@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.gameobjects;
+package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
 
 import org.academiadecodigo.bootcamp.*;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
@@ -6,14 +6,16 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class CannonBall extends GameObject implements Movable, Jumpable, Representable, Pickable {
+public class BowlingBall extends JumpObject implements Movable, Jumpable, Representable, Pickable {
 
-    public CannonBall(RepresentablePics picture) {
+
+    public BowlingBall(RepresentablePics picture) {
         super(picture);
     }
 
+
     @Override
-    public void jump(int heigth, int slope) {
+    public void move(MouseEvent mouseEvent) {
 
     }
 
@@ -55,11 +57,6 @@ public class CannonBall extends GameObject implements Movable, Jumpable, Represe
 
     @Override
     public void show() {
-
-    }
-
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
     }
 }

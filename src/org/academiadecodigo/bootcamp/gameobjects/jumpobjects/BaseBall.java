@@ -1,26 +1,32 @@
-package org.academiadecodigo.bootcamp.gameobjects;
+package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
 
 import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.bootcamp.Field.FieldPosition;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BasketBall extends GameObject implements Movable, Jumpable, Representable, Pickable {
+public class BaseBall extends JumpObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
 
 
-    public BasketBall(RepresentablePics picture) {
+    private boolean collision;
+    private DirectionTypes direction;
+
+    public BaseBall(RepresentablePics picture) {
         super(picture);
     }
 
-    @Override
-    public void jump(int heigth, int slope) {
+
+
+    private void setY(int newY){
 
     }
 
+
     @Override
     public DirectionTypes getDirectionType() {
-        return null;
+        return this.direction;
     }
 
     @Override
@@ -40,7 +46,7 @@ public class BasketBall extends GameObject implements Movable, Jumpable, Represe
 
     @Override
     public boolean getCollision() {
-        return false;
+        return collision;
     }
 
     @Override
@@ -56,10 +62,21 @@ public class BasketBall extends GameObject implements Movable, Jumpable, Represe
     @Override
     public void show() {
 
+
+    }
+
+    @Override
+    public void hide() {
+
     }
 
     @Override
     public void move(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void jumpLeft(int heigth, int slope) {
 
     }
 }
