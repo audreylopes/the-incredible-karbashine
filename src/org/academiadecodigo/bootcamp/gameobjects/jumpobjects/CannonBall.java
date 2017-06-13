@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.gameobjects;
+package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
 
 import org.academiadecodigo.bootcamp.*;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
@@ -6,17 +6,18 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BasketBall extends GameObject implements Movable, Jumpable, Representable, Pickable {
+<<<<<<< HEAD:src/org/academiadecodigo/bootcamp/gameobjects/CannonBall.java
+public class CannonBall extends GameObject implements Movable, Jumpable, Representable, Pickable {
 
 
-    public BasketBall(RepresentablePics picture) {
+=======
+public class CannonBall extends JumpObject implements Movable, Jumpable, Representable, Pickable {
+
+>>>>>>> 09e8493e34c65bbe097be440c098361b9ec28ec3:src/org/academiadecodigo/bootcamp/gameobjects/jumpobjects/CannonBall.java
+    public CannonBall(RepresentablePics picture) {
         super(picture);
     }
 
-    @Override
-    public void jump(int heigth, int slope) {
-
-    }
 
     @Override
     public DirectionTypes getDirectionType() {

@@ -11,7 +11,10 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Pipe extends GameObject implements Representable, Pickable {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09e8493e34c65bbe097be440c098361b9ec28ec3
     public Pipe(RepresentablePics picture) {
         super(picture);
     }

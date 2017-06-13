@@ -6,10 +6,12 @@ package org.academiadecodigo.bootcamp;
 public abstract class GameObject {
 
 
-
     private Position position;
     private CollisionChecker collisionChecker;
     private RepresentablePics picture;
+    private boolean collision;
+    private DirectionTypes direction;
+    private GameObjectTypes gameObjectTypes;
 
 
     public GameObject(RepresentablePics picture) {
