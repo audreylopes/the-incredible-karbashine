@@ -30,11 +30,17 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
     @Override
     public void moveRight() {
         direction.rotateToRight();
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override
     public void moveLeft() {
         direction.rotateToLeft();
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override
@@ -44,6 +50,10 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
 
     public void moveUp(){
         direction = DirectionTypes.UP;
+
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override

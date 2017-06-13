@@ -9,6 +9,8 @@ public abstract class GameObject {
 
     private Position position;
 
+    private CollisionChecker collisionChecker;
+
     private RepresentablePics picture;
 
     public GameObject(RepresentablePics picture) {
@@ -19,5 +21,12 @@ public abstract class GameObject {
         return position;
     }
 
+    public void setCollisionChecker(CollisionChecker collisionChecker) {
+        this.collisionChecker = collisionChecker;
+    }
+
+    public CollisionChecker getCollisionChecker() {
+        return collisionChecker;
+    }
 
 }
