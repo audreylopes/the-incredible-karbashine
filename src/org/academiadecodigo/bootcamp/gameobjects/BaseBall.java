@@ -1,18 +1,19 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
 import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BaseBall implements Movable, Jumpable, Representable, Pickable {
+public class BaseBall implements Movable, Jumpable, Representable, Pickable, FieldPosition{
+
+
+
     @Override
     public void jump(int heigth, int slope) {
 
-    }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
     }
 
@@ -53,6 +54,17 @@ public class BaseBall implements Movable, Jumpable, Representable, Pickable {
 
     @Override
     public void show() {
+
+
+    }
+
+    @Override
+    public void hide() {
+
+    }
+
+    @Override
+    public void move(MouseEvent mouseEvent) {
 
     }
 }

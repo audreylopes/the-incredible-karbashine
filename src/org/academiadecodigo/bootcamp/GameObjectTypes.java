@@ -20,7 +20,7 @@ public enum GameObjectTypes {
     CANNON,
     CANDLE,
     CONVEYOR,
-    ELECTRICMOTOR,
+    MOTOR,
     SEESAW,
     TRAMPOLINE
 

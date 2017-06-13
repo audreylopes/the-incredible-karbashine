@@ -6,4 +6,18 @@ package org.academiadecodigo.bootcamp;
 public abstract class GameObject {
 
 
+
+    private Position position;
+
+    private RepresentablePics picture;
+
+    public GameObject(RepresentablePics picture) {
+        this.picture = picture;
+    }
+
+    public Position getPosition(){
+        return position;
+    }
+
+
 }
