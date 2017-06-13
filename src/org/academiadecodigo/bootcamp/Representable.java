@@ -6,9 +6,12 @@ package org.academiadecodigo.bootcamp;
 public interface Representable {
 
 
+
     int getX();
     int getY();
 
     void show();
+
+
 
 }

@@ -1,44 +1,74 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
-import org.academiadecodigo.bootcamp.Direction;
-import org.academiadecodigo.bootcamp.Movable;
-import org.academiadecodigo.bootcamp.Pickable;
-import org.academiadecodigo.bootcamp.Representable;
+import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class Balloon implements Representable, Movable, Pickable {
-    @Override
-    public void move(MouseEvent mouseEvent) {
+public class Balloon extends GameObject implements Representable, Movable, Pickable {
+
+
+    private boolean collision;
+    private DirectionTypes direction;
+
+    public void checkCollision(){
+
 
     }
 
+    public Balloon(RepresentablePics picture) {
+        super(picture);
+    }
+
+
     @Override
-    public Direction getDirection() {
-        return null;
+    public DirectionTypes getDirectionType() {
+        return this.direction;
     }
 
     @Override
     public void moveRight() {
-
+        direction.rotateToRight();
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override
     public void moveLeft() {
-
+        direction.rotateToLeft();
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override
     public void moveDown() {
+        return;
+    }
 
+    public void moveUp(){
+        direction = DirectionTypes.UP;
+
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override
     public boolean getCollision() {
-        return false;
+        return collision;
     }
 
+
+    @Override
+    public void move(MouseEvent mouseEvent) {
+
+    }
+/*
+   ____________ POR AGORA ESTÃO IMPLEMENTADOS NA CLASSE REPRESENTABLEPICS ___________
+ */
     @Override
     public int getX() {
         return 0;

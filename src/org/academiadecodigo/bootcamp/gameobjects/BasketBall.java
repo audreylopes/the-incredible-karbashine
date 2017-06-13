@@ -1,12 +1,17 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
 import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BasketBall implements Movable, Jumpable, Representable, Pickable {
+public class BasketBall extends GameObject implements Movable, Jumpable, Representable, Pickable {
 
+
+    public BasketBall(RepresentablePics picture) {
+        super(picture);
+    }
 
     @Override
     public void jump(int heigth, int slope) {
@@ -14,12 +19,7 @@ public class BasketBall implements Movable, Jumpable, Representable, Pickable {
     }
 
     @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public Direction getDirection() {
+    public DirectionTypes getDirectionType() {
         return null;
     }
 
@@ -55,6 +55,11 @@ public class BasketBall implements Movable, Jumpable, Representable, Pickable {
 
     @Override
     public void show() {
+
+    }
+
+    @Override
+    public void move(MouseEvent mouseEvent) {
 
     }
 }

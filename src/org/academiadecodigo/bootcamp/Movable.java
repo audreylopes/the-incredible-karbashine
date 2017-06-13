@@ -5,7 +5,7 @@ package org.academiadecodigo.bootcamp;
  */
 public interface Movable {
 
-    Direction getDirection();
+    DirectionTypes getDirectionType();
 
     void moveRight();
     void moveLeft();
