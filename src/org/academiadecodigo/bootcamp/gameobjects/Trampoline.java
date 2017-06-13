@@ -11,7 +11,6 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Trampoline extends GameObject implements Representable, Pickable {
 
-
     public Trampoline(RepresentablePics picture) {
         super(picture);
     }

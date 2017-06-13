@@ -8,7 +8,6 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class CannonBall extends GameObject implements Movable, Jumpable, Representable, Pickable {
 
-
     public CannonBall(RepresentablePics picture) {
         super(picture);
     }

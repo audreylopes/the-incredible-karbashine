@@ -11,7 +11,6 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Seesaw extends GameObject implements Representable, Pickable{
 
-
     public Seesaw(RepresentablePics picture) {
         super(picture);
     }

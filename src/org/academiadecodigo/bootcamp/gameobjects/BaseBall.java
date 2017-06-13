@@ -9,6 +9,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class BaseBall extends JumpObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
 
+
     private boolean collision;
     private DirectionTypes direction;
 

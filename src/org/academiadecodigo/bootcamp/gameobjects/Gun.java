@@ -11,7 +11,6 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Gun extends GameObject implements Representable, Pickable{
 
-
     public Gun(RepresentablePics picture) {
         super(picture);
     }

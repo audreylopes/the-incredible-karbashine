@@ -11,7 +11,6 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Ramp extends GameObject implements Representable, Pickable{
 
-
     public Ramp(RepresentablePics picture) {
         super(picture);
     }
