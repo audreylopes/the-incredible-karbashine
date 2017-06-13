@@ -1,11 +1,11 @@
-package org.academiadecodigo.bootcamp;
+package org.academiadecodigo.bootcamp.gameobjects;
+
+import org.academiadecodigo.bootcamp.*;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BasketBall implements Movable, Jumpable, Representable, Pickable {
-
-
+public class CannonBall implements Movable, Jumpable, Representable, Pickable {
     @Override
     public void jump(int heigth, int slope) {
 
