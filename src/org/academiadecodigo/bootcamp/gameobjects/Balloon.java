@@ -9,34 +9,46 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class Balloon extends GameObject implements Representable, Movable, Pickable {
 
 
+    private boolean collision;
+
+    public void checkCollision(){
+
+
+    }
+
+    public Balloon(RepresentablePics picture) {
+        super(picture);
+    }
+
+    private DirectionTypes direction;
 
     @Override
-    public Direction getDirection() {
-        return null;
+    public DirectionTypes getDirectionType() {
+        return this.direction;
     }
 
     @Override
     public void moveRight() {
-
+        direction.rotateToRight();
     }
 
     @Override
     public void moveLeft() {
-
+        direction.rotateToLeft();
     }
 
     @Override
     public void moveDown() {
-
+        return;
     }
 
     public void moveUp(){
-
+        direction = DirectionTypes.UP;
     }
 
     @Override
     public boolean getCollision() {
-        return false;
+        return collision;
     }
 
     @Override
