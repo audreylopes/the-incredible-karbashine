@@ -7,11 +7,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-<<<<<<< HEAD
-public class BaseBall implements Movable, Jumpable, Representable, Pickable, FieldPosition {
-=======
 public class BaseBall extends GameObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
->>>>>>> f0da2230ee2214d135974d76b8f7949c22588cde
 
     private boolean collision;
     private DirectionTypes direction;

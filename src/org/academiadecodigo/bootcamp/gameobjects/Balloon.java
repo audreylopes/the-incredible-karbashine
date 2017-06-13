@@ -9,11 +9,9 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class Balloon extends GameObject implements Representable, Movable, Pickable {
 
 
-<<<<<<< HEAD
     public Balloon(RepresentablePics picture) {
         super(picture);
     }
-=======
     private boolean collision;
     private DirectionTypes direction;
 
@@ -22,11 +20,8 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
 
     }
 
-    public Balloon(RepresentablePics picture) {
-        super(picture);
-    }
 
->>>>>>> f0da2230ee2214d135974d76b8f7949c22588cde
+
 
     @Override
     public DirectionTypes getDirectionType() {
