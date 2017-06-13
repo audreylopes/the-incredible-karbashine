@@ -5,5 +5,7 @@ package org.academiadecodigo.bootcamp;
  */
 public interface Jumpable {
 
-    void jump(int heigth, int slope);
+    void jumpRight(int heigth, int slope);
+
+    void jumpLeft(int heigth, int slope);
 }

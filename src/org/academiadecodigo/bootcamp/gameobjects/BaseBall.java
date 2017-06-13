@@ -7,7 +7,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BaseBall extends GameObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
+public class BaseBall extends JumpObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
 
     private boolean collision;
     private DirectionTypes direction;
@@ -16,24 +16,7 @@ public class BaseBall extends GameObject implements Movable, Jumpable, Represent
         super(picture);
     }
 
-    public void checkCollision(){
 
-
-    }
-
-    @Override
-    public void jump(int heigth, int slope) {
-
-        int currentY;
-        for (int i = getX(); collision ; i++) {
-
-            currentY = i / slope - heigth;            //FÓRMULA DA PARABOLA
-            setY(currentY);
-
-            checkCollision();                       //VAI CHECKANDO SEMPRE SE CHOCA COM ALGUM OBJECTO
-        }
-
-    }
 
     private void setY(int newY){
 
@@ -88,6 +71,11 @@ public class BaseBall extends GameObject implements Movable, Jumpable, Represent
 
     @Override
     public void move(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void jumpLeft(int heigth, int slope) {
 
     }
 }
