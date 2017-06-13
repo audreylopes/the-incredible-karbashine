@@ -6,6 +6,7 @@ package org.academiadecodigo.bootcamp;
 public class JumpObject extends GameObject implements Jumpable, Representable{
 
 
+    private boolean collision;
 
     public JumpObject(RepresentablePics picture) {
         super(picture);
@@ -17,13 +18,14 @@ public class JumpObject extends GameObject implements Jumpable, Representable{
     }
 
 
+
     @Override
     public void jumpRight(int heigth, int slope) {
 
         int currentY;
         for (int i = getX(); collision ; i++) {
 
-            currentY = i / slope - heigth;            //FÓRMULA DA PARABOLA
+            currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
             setY(currentY);
 
             checkCollision();                       //VAI CHECKANDO SEMPRE SE CHOCA COM ALGUM OBJECTO
@@ -33,6 +35,15 @@ public class JumpObject extends GameObject implements Jumpable, Representable{
 
     @Override
     public void jumpLeft(int heigth, int slope) {
+
+        int currentY;
+        for (int i = getX(); collision ; i--) {
+
+            currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
+            setY(currentY);
+
+            checkCollision();                       //VAI CHECKANDO SEMPRE SE CHOCA COM ALGUM OBJECTO
+        }
 
     }
 

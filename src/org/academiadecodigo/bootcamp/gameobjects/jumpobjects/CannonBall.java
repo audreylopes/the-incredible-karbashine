@@ -1,32 +1,21 @@
-package org.academiadecodigo.bootcamp.gameobjects;
+package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
 
 import org.academiadecodigo.bootcamp.*;
-import org.academiadecodigo.bootcamp.Field.FieldPosition;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BaseBall extends JumpObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
+public class CannonBall extends JumpObject implements Movable, Jumpable, Representable, Pickable {
 
-
-    private boolean collision;
-    private DirectionTypes direction;
-
-    public BaseBall(RepresentablePics picture) {
+    public CannonBall(RepresentablePics picture) {
         super(picture);
-    }
-
-
-
-    private void setY(int newY){
-
     }
 
 
     @Override
     public DirectionTypes getDirectionType() {
-        return this.direction;
+        return null;
     }
 
     @Override
@@ -46,7 +35,7 @@ public class BaseBall extends JumpObject implements Movable, Jumpable, Represent
 
     @Override
     public boolean getCollision() {
-        return collision;
+        return false;
     }
 
     @Override
@@ -62,21 +51,10 @@ public class BaseBall extends JumpObject implements Movable, Jumpable, Represent
     @Override
     public void show() {
 
-
-    }
-
-    @Override
-    public void hide() {
-
     }
 
     @Override
     public void move(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void jumpLeft(int heigth, int slope) {
 
     }
 }
