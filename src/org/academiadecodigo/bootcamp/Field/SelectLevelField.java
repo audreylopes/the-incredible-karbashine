@@ -3,9 +3,7 @@ package org.academiadecodigo.bootcamp.Field;
 /**
  * Created by codecadet on 13/06/17.
  */
-public class BackgroundField implements Field,FieldPosition {
-
-
+public class SelectLevelField implements Field,FieldPosition {
     @Override
     public void init() {
 
