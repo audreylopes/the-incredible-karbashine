@@ -6,6 +6,7 @@ package org.academiadecodigo.bootcamp;
 public interface FieldPosition {
 
     int getX();
+
     int getY();
 
     void show();

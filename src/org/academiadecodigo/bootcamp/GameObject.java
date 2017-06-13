@@ -5,5 +5,11 @@ package org.academiadecodigo.bootcamp;
  */
 public abstract class GameObject {
 
+    private Position position;
+
+    public Position getPosition(){
+        return position;
+    }
+
 
 }

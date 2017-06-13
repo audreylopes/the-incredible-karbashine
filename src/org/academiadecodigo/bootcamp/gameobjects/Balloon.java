@@ -1,18 +1,14 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
-import org.academiadecodigo.bootcamp.Direction;
-import org.academiadecodigo.bootcamp.Movable;
-import org.academiadecodigo.bootcamp.Pickable;
-import org.academiadecodigo.bootcamp.Representable;
+import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class Balloon implements Representable, Movable, Pickable {
-    @Override
-    public void move(MouseEvent mouseEvent) {
+public class Balloon extends GameObject implements Representable, Movable, Pickable {
 
-    }
+
 
     @Override
     public Direction getDirection() {
@@ -34,6 +30,10 @@ public class Balloon implements Representable, Movable, Pickable {
 
     }
 
+    public void moveUp(){
+
+    }
+
     @Override
     public boolean getCollision() {
         return false;
@@ -51,6 +51,11 @@ public class Balloon implements Representable, Movable, Pickable {
 
     @Override
     public void show() {
+
+    }
+
+    @Override
+    public void move(MouseEvent mouseEvent) {
 
     }
 }
