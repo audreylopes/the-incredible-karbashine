@@ -3,6 +3,7 @@ package org.academiadecodigo.bootcamp.gameobjects;
 import org.academiadecodigo.bootcamp.GameObject;
 import org.academiadecodigo.bootcamp.Pickable;
 import org.academiadecodigo.bootcamp.Representable;
+import org.academiadecodigo.bootcamp.RepresentablePics;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
@@ -10,6 +11,10 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Belt extends GameObject implements Representable, Pickable{
 
+
+    public Belt(RepresentablePics picture) {
+        super(picture);
+    }
 
     @Override
     public void move(MouseEvent mouseEvent) {

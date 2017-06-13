@@ -1,12 +1,13 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
 import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.bootcamp.Field.FieldPosition;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BaseBall implements Movable, Jumpable, Representable, Pickable, FieldPosition{
+public class BaseBall implements Movable, Jumpable, Representable, Pickable, FieldPosition {
 
 
 

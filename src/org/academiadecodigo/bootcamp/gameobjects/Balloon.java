@@ -9,6 +9,9 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class Balloon extends GameObject implements Representable, Movable, Pickable {
 
 
+    public Balloon(RepresentablePics picture) {
+        super(picture);
+    }
 
     @Override
     public Direction getDirection() {

@@ -9,8 +9,9 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class BowlingBall extends GameObject implements Movable, Jumpable, Representable, Pickable {
 
 
-
-
+    public BowlingBall(RepresentablePics picture) {
+        super(picture);
+    }
 
     @Override
     public void jump(int heigth, int slope) {

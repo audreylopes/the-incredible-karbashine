@@ -7,20 +7,18 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 /**
  * Created by codecadet on 12/06/17.
  */
-public class MouseHandling implements MouseHandler,Clickable {
+public abstract class MouseHandling implements MouseHandler,Clickable {
 
 
     public MouseHandling() {
         Mouse m = new Mouse(this);
         m.addEventListener(MouseEventType.MOUSE_CLICKED);
 
-
     }
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-        click();
-
+          click();
     }
 
     @Override
@@ -28,8 +26,5 @@ public class MouseHandling implements MouseHandler,Clickable {
 
     }
 
-    @Override
-    public void click() {
 
-    }
 }
