@@ -23,8 +23,9 @@ public class BowlingBall extends GameObject implements Movable, Jumpable, Repres
 
     }
 
+
     @Override
-    public Direction getDirection() {
+    public DirectionTypes getDirectionType() {
         return null;
     }
 

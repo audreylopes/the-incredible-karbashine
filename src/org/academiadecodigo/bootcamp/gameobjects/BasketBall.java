@@ -19,7 +19,7 @@ public class BasketBall extends GameObject implements Movable, Jumpable, Represe
     }
 
     @Override
-    public Direction getDirection() {
+    public DirectionTypes getDirectionType() {
         return null;
     }
 

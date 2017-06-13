@@ -9,39 +9,72 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class Balloon extends GameObject implements Representable, Movable, Pickable {
 
 
+<<<<<<< HEAD
+    public Balloon(RepresentablePics picture) {
+        super(picture);
+    }
+=======
+    private boolean collision;
+    private DirectionTypes direction;
+
+    public void checkCollision(){
+
+
+    }
+
     public Balloon(RepresentablePics picture) {
         super(picture);
     }
 
+>>>>>>> f0da2230ee2214d135974d76b8f7949c22588cde
+
     @Override
-    public Direction getDirection() {
-        return null;
+    public DirectionTypes getDirectionType() {
+        return this.direction;
     }
 
     @Override
     public void moveRight() {
-
+        direction.rotateToRight();
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override
     public void moveLeft() {
-
+        direction.rotateToLeft();
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override
     public void moveDown() {
-
+        return;
     }
 
     public void moveUp(){
+        direction = DirectionTypes.UP;
 
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
+        }
     }
 
     @Override
     public boolean getCollision() {
-        return false;
+        return collision;
     }
 
+
+    @Override
+    public void move(MouseEvent mouseEvent) {
+
+    }
+/*
+   ____________ POR AGORA ESTÃO IMPLEMENTADOS NA CLASSE REPRESENTABLEPICS ___________
+ */
     @Override
     public int getX() {
         return 0;
@@ -54,11 +87,6 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
 
     @Override
     public void show() {
-
-    }
-
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
     }
 }

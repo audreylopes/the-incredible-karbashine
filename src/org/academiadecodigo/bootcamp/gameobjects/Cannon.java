@@ -10,6 +10,10 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  * Created by codecadet on 13/06/2017.
  */
 public class Cannon extends GameObject implements Representable, Pickable{
+<<<<<<< HEAD
+=======
+
+>>>>>>> f0da2230ee2214d135974d76b8f7949c22588cde
     public Cannon(RepresentablePics picture) {
         super(picture);
     }
