@@ -11,8 +11,12 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 public class CannonBall extends JumpObject implements Movable, Jumpable, Representable, Pickable {
 
+
+    Picker picker;
     public CannonBall(RepresentablePics picture) {
         super(picture);
+        picker = new Picker(this);
+
     }
 
 

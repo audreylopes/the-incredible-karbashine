@@ -17,8 +17,7 @@ public class PushObject extends GameObject  {
 
 
     private boolean getCollision(){
-
-return false;
+        return false;
 
     }
 

@@ -2,10 +2,6 @@ package org.academiadecodigo.bootcamp.buttons;
 
 import org.academiadecodigo.bootcamp.Clickable;
 import org.academiadecodigo.bootcamp.Clicker;
-import org.academiadecodigo.simplegraphics.mouse.Mouse;
-import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
-import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
-import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**

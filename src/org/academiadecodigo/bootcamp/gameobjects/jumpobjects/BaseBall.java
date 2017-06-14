@@ -13,9 +13,11 @@ public class BaseBall extends JumpObject implements Movable, Jumpable, Represent
 
     private boolean collision;
     private DirectionTypes direction;
+    Picker picker;
 
     public BaseBall(RepresentablePics picture) {
         super(picture);
+        picker = new Picker(this);
     }
 
 

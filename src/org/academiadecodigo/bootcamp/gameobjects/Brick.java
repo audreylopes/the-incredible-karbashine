@@ -1,10 +1,7 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
-import org.academiadecodigo.bootcamp.GameObject;
-import org.academiadecodigo.bootcamp.Pickable;
+import org.academiadecodigo.bootcamp.*;
 
-import org.academiadecodigo.bootcamp.Representable;
-import org.academiadecodigo.bootcamp.RepresentablePics;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
@@ -13,9 +10,14 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class Brick extends GameObject implements Representable, Pickable{
 
 
+    Picker picker;
+
     public Brick(RepresentablePics picture) {
         super(picture);
+        picker = new Picker(this);
     }
+
+
 
 
 

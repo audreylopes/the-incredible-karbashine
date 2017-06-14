@@ -8,8 +8,11 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Gun extends PushObject implements Representable, Pickable{
 
+
+    Picker picker;
     public Gun(RepresentablePics picture) {
         super(picture);
+        picker = new Picker(this);
     }
 
 
