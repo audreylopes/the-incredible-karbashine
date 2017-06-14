@@ -6,12 +6,8 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-<<<<<<< HEAD
-public class Gun extends GameObject implements Representable, Pickable {
-=======
 public class Gun extends PushObject implements Representable, Pickable{
 
->>>>>>> 09e8493e34c65bbe097be440c098361b9ec28ec3
     public Gun(RepresentablePics picture) {
         super(picture);
     }
