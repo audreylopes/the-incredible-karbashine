@@ -15,7 +15,7 @@ public class PushObject extends GameObject implements Representable {
 
 
     private boolean getCollision(){
-        
+
 
     }
 
