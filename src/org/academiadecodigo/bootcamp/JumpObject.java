@@ -26,7 +26,7 @@ public class JumpObject extends GameObject implements Jumpable, Representable{
         for (int i = getX(); collision ; i++) {
 
             currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
-            setY(currentY);
+            //setY(currentY);
 
             checkCollision();                       //VAI CHECKANDO SEMPRE SE CHOCA COM ALGUM OBJECTO
         }
@@ -40,7 +40,7 @@ public class JumpObject extends GameObject implements Jumpable, Representable{
         for (int i = getX(); collision ; i--) {
 
             currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
-            setY(currentY);
+            //setY(currentY);
 
             checkCollision();                       //VAI CHECKANDO SEMPRE SE CHOCA COM ALGUM OBJECTO
         }

@@ -3,7 +3,7 @@ package org.academiadecodigo.bootcamp;
 /**
  * Created by codecadet on 12/06/17.
  */
-public abstract class GameObject {
+public abstract class GameObject implements  {
 
 
     private Position position;

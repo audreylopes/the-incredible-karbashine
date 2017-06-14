@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.buttons;
 
 import org.academiadecodigo.bootcamp.Clickable;
+import org.academiadecodigo.bootcamp.Clicker;
 import org.academiadecodigo.simplegraphics.mouse.Mouse;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
@@ -9,28 +10,19 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class VolumeAdjustDownButton implements Clickable,MouseHandler {
+public class VolumeAdjustDownButton implements Clickable{
 
-    Mouse mouse;
+    Clicker clicker;
 
 
     public VolumeAdjustDownButton() {
-        mouse = new Mouse(this);
-        mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
-    }
-    @Override
-    public void click() {
 
-    }
-
-
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        click();
+        clicker = new Clicker(this);
     }
 
     @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
+    public void whenClick() {
 
     }
+
 }

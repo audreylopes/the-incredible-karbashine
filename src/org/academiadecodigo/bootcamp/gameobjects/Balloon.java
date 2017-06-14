@@ -9,16 +9,17 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class Balloon extends GameObject implements Representable, Movable, Pickable,MouseHandler {
+public class Balloon extends GameObject implements Representable, Movable {
 
+    private boolean collision;
+    private DirectionTypes direction;
+    Clicker clicker;
 
     public Balloon(RepresentablePics picture) {
         super(picture);
-        mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
+        clicker = new Clicker(this);
+
     }
-    private boolean collision;
-    private DirectionTypes direction;
-    Mouse mouse;
 
 
 
@@ -73,6 +74,7 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
     @Override
     public void move(MouseEvent mouseEvent) {
 
+
     }
 /*
    ____________ POR AGORA ESTÃO IMPLEMENTADOS NA CLASSE REPRESENTABLEPICS ___________
@@ -93,12 +95,8 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
     }
 
     @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        move(mouseEvent);
-    }
+    public void whenClick() {
 
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
 
     }
 }

@@ -9,6 +9,6 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
  */
 public interface Clickable  {
     
-    void click();
+    void whenClick();
 
 }
