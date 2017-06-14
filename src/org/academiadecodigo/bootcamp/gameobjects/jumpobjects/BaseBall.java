@@ -7,7 +7,11 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
+<<<<<<< HEAD
+public class BaseBall extends JumpObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
+=======
 public class BaseBall extends JumpObject implements Movable {
+>>>>>>> 05b80f357128b7666cde46d5dd9c4a131f5f2f82
 
 
     private boolean collision;

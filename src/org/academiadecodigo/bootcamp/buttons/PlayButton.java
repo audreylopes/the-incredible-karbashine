@@ -1,8 +1,7 @@
 package org.academiadecodigo.bootcamp.buttons;
 
 import org.academiadecodigo.bootcamp.Clickable;
-import org.academiadecodigo.bootcamp.MouseHandling;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academiadecodigo.bootcamp.Clicker;
 import org.academiadecodigo.simplegraphics.mouse.Mouse;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
@@ -12,36 +11,27 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class PlayButton implements Clickable,MouseHandler {
+public class PlayButton implements Clickable {
 
-    Mouse mouse;
+    Clicker clicker;
     private int level;
+    Picture picture;
 
     public PlayButton() {
-        mouse = new Mouse(this);
-        mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
-
-
+   clicker = new Clicker(this);
+   picture = new Picture(10,10,"http://t04.deviantart.net/FgQI1X8JOsAh4oFtS9vb6NqwVw0=/300x200/filters:fixed_height(100,100):origin()/pre05/8b9f/th/pre/f/2015/081/f/c/scratch_cat_by_tehlu9prod-d8ms8j7.png");
 
     }
 
     /**
-     * @param@ Implementar codigo para o que o click vai fazer;
+     * @param@ Implementar codigo para o que o whenClick vai fazer;
      */
     @Override
-    public void click() {
-    }
-
-
-    //Depois o click vai ser chamada no mouseClicked e vai executar o codigo dentro do clicl();
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        click();
-    }
-
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
+    public void whenClick() {
 
     }
+
+
+
 }
 

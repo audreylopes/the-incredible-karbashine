@@ -1,37 +1,25 @@
 package org.academiadecodigo.bootcamp.buttons;
 
 import org.academiadecodigo.bootcamp.Clickable;
-import org.academiadecodigo.simplegraphics.mouse.Mouse;
-import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
-import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
-import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
+import org.academiadecodigo.bootcamp.Clicker;
+
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class PuzzleSelectionModeButton implements Clickable,MouseHandler{
+public class PuzzleSelectionModeButton implements Clickable{
 
-    private Mouse mouse;
 
+    Clicker clicker;
 
     public PuzzleSelectionModeButton() {
-        mouse = new Mouse(this);
-        mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
+    clicker = new Clicker(this);
     }
 
-    //Implemtar o codigo em click para depois ser executado;
+    //Implemtar o codigo em whenClick para depois ser executado;
     @Override
-    public void click() {
+    public void whenClick() {
 
     }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        click();
-    }
-
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-
-    }
 }
