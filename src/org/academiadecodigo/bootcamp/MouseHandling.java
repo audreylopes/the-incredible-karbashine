@@ -7,7 +7,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 /**
  * Created by codecadet on 12/06/17.
  */
-public abstract class MouseHandling implements MouseHandler,Clickable {
+public  class MouseHandling implements MouseHandler,Clickable {
 
 
     public MouseHandling() {
@@ -18,7 +18,7 @@ public abstract class MouseHandling implements MouseHandler,Clickable {
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-          click();
+
     }
 
     @Override
@@ -27,4 +27,8 @@ public abstract class MouseHandling implements MouseHandler,Clickable {
     }
 
 
+    @Override
+    public void click() {
+
+    }
 }

@@ -6,7 +6,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BasketBall extends JumpObject implements Movable, Jumpable, Representable, Pickable {
+public class BasketBall extends JumpObject implements Movable {
 
 
     public BasketBall(RepresentablePics picture) {
@@ -40,23 +40,15 @@ public class BasketBall extends JumpObject implements Movable, Jumpable, Represe
         return false;
     }
 
-    @Override
-    public int getX() {
-        return 0;
-    }
 
-    @Override
-    public int getY() {
-        return 0;
-    }
-
-    @Override
-    public void show() {
-
-    }
 
     @Override
     public void move(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void click() {
 
     }
 }
