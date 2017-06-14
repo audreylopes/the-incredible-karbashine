@@ -9,7 +9,11 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 /**
  * Created by codecadet on 13/06/2017.
  */
+<<<<<<< HEAD
 public class Balloon extends GameObject implements Representable, Movable {
+=======
+public class Balloon extends MovingObject implements Movable {
+>>>>>>> 05b80f357128b7666cde46d5dd9c4a131f5f2f82
 
     private boolean collision;
     private DirectionTypes direction;
@@ -22,6 +26,11 @@ public class Balloon extends GameObject implements Representable, Movable {
     }
 
 
+<<<<<<< HEAD
+=======
+    private boolean collision;
+    private DirectionTypes direction;
+>>>>>>> 05b80f357128b7666cde46d5dd9c4a131f5f2f82
 
     public void checkCollision(){
 
@@ -29,7 +38,10 @@ public class Balloon extends GameObject implements Representable, Movable {
     }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 05b80f357128b7666cde46d5dd9c4a131f5f2f82
 
     @Override
     public DirectionTypes getDirectionType() {
@@ -76,27 +88,22 @@ public class Balloon extends GameObject implements Representable, Movable {
 
 
     }
-/*
-   ____________ POR AGORA ESTÃO IMPLEMENTADOS NA CLASSE REPRESENTABLEPICS ___________
- */
-    @Override
-    public int getX() {
-        return 0;
-    }
 
     @Override
-    public int getY() {
-        return 0;
-    }
-
-    @Override
-    public void show() {
+    public void click() {
 
     }
+<<<<<<< HEAD
 
     @Override
     public void whenClick() {
 
 
     }
+=======
+/*
+   ____________ POR AGORA ESTÃO IMPLEMENTADOS NA CLASSE REPRESENTABLEPICS ___________
+ */
+
+>>>>>>> 05b80f357128b7666cde46d5dd9c4a131f5f2f82
 }

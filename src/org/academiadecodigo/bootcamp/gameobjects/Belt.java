@@ -9,7 +9,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class Belt extends GameObject implements Representable, Pickable{
+public class Belt extends GameObject {
 
 
     public Belt(RepresentablePics picture) {
@@ -22,17 +22,7 @@ public class Belt extends GameObject implements Representable, Pickable{
     }
 
     @Override
-    public int getX() {
-        return 0;
-    }
-
-    @Override
-    public int getY() {
-        return 0;
-    }
-
-    @Override
-    public void show() {
+    public void click() {
 
     }
 }

@@ -7,7 +7,11 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
+<<<<<<< HEAD
 public class BaseBall extends JumpObject implements Movable, Jumpable, Representable, Pickable, FieldPosition {
+=======
+public class BaseBall extends JumpObject implements Movable {
+>>>>>>> 05b80f357128b7666cde46d5dd9c4a131f5f2f82
 
 
     private boolean collision;
@@ -49,26 +53,6 @@ public class BaseBall extends JumpObject implements Movable, Jumpable, Represent
         return collision;
     }
 
-    @Override
-    public int getX() {
-        return 0;
-    }
-
-    @Override
-    public int getY() {
-        return 0;
-    }
-
-    @Override
-    public void show() {
-
-
-    }
-
-    @Override
-    public void hide() {
-
-    }
 
     @Override
     public void move(MouseEvent mouseEvent) {
@@ -77,6 +61,11 @@ public class BaseBall extends JumpObject implements Movable, Jumpable, Represent
 
     @Override
     public void jumpLeft(int heigth, int slope) {
+
+    }
+
+    @Override
+    public void click() {
 
     }
 }

@@ -3,7 +3,7 @@ package org.academiadecodigo.bootcamp;
 /**
  * Created by codecadet on 12/06/17.
  */
-public abstract class GameObject implements  {
+public abstract class GameObject implements Representable, Clickable, Pickable {
 
 
     private Position position;
@@ -31,4 +31,18 @@ public abstract class GameObject implements  {
     }
 
 
+    @Override
+    public int getX() {
+        return position.getX();
+    }
+
+    @Override
+    public int getY() {
+        return position.getY();
+    }
+
+    @Override
+    public void show() {
+
+    }
 }

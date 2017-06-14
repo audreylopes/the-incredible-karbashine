@@ -1,9 +1,11 @@
 package org.academiadecodigo.bootcamp;
 
+import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
+
 /**
  * Created by codecadet on 13/06/17.
  */
-public class PushObject extends GameObject implements Representable {
+public class PushObject extends GameObject  {
 
 
     private Direction direction;
@@ -29,17 +31,12 @@ public class PushObject extends GameObject implements Representable {
 
 
     @Override
-    public int getX() {
-        return 0;
+    public void move(MouseEvent mouseEvent) {
+
     }
 
     @Override
-    public int getY() {
-        return 0;
-    }
-
-    @Override
-    public void show() {
+    public void click() {
 
     }
 }

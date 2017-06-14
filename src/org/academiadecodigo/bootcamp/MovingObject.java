@@ -1,19 +1,14 @@
-package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
+package org.academiadecodigo.bootcamp;
 
-import org.academiadecodigo.bootcamp.*;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
- * Created by codecadet on 13/06/2017.
+ * Created by codecadet on 14/06/2017.
  */
-public class BasketBall extends JumpObject implements Movable {
+public class MovingObject extends GameObject implements Movable{
 
-
-    public BasketBall(RepresentablePics picture) {
-        super(picture);
+    public MovingObject(RepresentablePics picture) {
     }
-
-
 
     @Override
     public DirectionTypes getDirectionType() {
@@ -39,8 +34,6 @@ public class BasketBall extends JumpObject implements Movable {
     public boolean getCollision() {
         return false;
     }
-
-
 
     @Override
     public void move(MouseEvent mouseEvent) {

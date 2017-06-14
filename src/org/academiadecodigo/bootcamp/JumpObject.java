@@ -3,7 +3,7 @@ package org.academiadecodigo.bootcamp;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class JumpObject extends GameObject implements Jumpable, Representable{
+public class JumpObject extends GameObject implements Jumpable {
 
 
     private boolean collision;
@@ -18,7 +18,6 @@ public class JumpObject extends GameObject implements Jumpable, Representable{
     }
 
 
-
     @Override
     public void jumpRight(int heigth, int slope) {
 
@@ -27,6 +26,8 @@ public class JumpObject extends GameObject implements Jumpable, Representable{
 
             currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
             //setY(currentY);
+            setY(currentY);
+            setX = i;
 
             checkCollision();                       //VAI CHECKANDO SEMPRE SE CHOCA COM ALGUM OBJECTO
         }
