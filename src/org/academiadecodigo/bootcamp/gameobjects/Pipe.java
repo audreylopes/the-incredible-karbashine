@@ -9,12 +9,8 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class Pipe extends GameObject implements Representable, Pickable {
+public class Pipe extends GameObject {
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 09e8493e34c65bbe097be440c098361b9ec28ec3
     public Pipe(RepresentablePics picture) {
         super(picture);
     }
@@ -24,18 +20,9 @@ public class Pipe extends GameObject implements Representable, Pickable {
 
     }
 
-    @Override
-    public int getX() {
-        return 0;
-    }
 
     @Override
-    public int getY() {
-        return 0;
-    }
-
-    @Override
-    public void show() {
+    public void click() {
 
     }
 }

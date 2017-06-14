@@ -6,15 +6,14 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class Balloon extends GameObject implements Representable, Movable, Pickable {
+public class Balloon extends MovingObject implements Movable {
 
 
-<<<<<<< HEAD
     public Balloon(RepresentablePics picture) {
         super(picture);
     }
-=======
->>>>>>> 09e8493e34c65bbe097be440c098361b9ec28ec3
+
+
     private boolean collision;
     private DirectionTypes direction;
 
@@ -24,10 +23,6 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
     }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 09e8493e34c65bbe097be440c098361b9ec28ec3
 
     @Override
     public DirectionTypes getDirectionType() {
@@ -73,21 +68,13 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
     public void move(MouseEvent mouseEvent) {
 
     }
+
+    @Override
+    public void click() {
+
+    }
 /*
    ____________ POR AGORA ESTÃO IMPLEMENTADOS NA CLASSE REPRESENTABLEPICS ___________
  */
-    @Override
-    public int getX() {
-        return 0;
-    }
 
-    @Override
-    public int getY() {
-        return 0;
-    }
-
-    @Override
-    public void show() {
-
-    }
 }
