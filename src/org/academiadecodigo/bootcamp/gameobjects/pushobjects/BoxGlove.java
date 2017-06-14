@@ -14,10 +14,7 @@ public class BoxGlove extends PushObject  {
         super(picture);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
 
     @Override
     public int getX() {

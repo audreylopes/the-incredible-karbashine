@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp;
 
+import org.academiadecodigo.simplegraphics.pictures.Picture;
+
 /**
  * Created by codecadet on 12/06/17.
  */
@@ -52,5 +54,6 @@ public abstract class GameObject implements Representable, Pickable {
     @Override
     public void show() {
 
+        picture.show();
     }
 }

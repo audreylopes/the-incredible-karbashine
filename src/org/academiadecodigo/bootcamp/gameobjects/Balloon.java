@@ -5,6 +5,7 @@ import org.academiadecodigo.simplegraphics.mouse.Mouse;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
 import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 /**
  * Created by codecadet on 13/06/2017.
@@ -15,6 +16,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
         private boolean collision;
         private DirectionTypes direction;
         Picker picker;
+        Picture picture;
 
         public Balloon(RepresentablePics picture) {
             super(picture);
@@ -23,6 +25,9 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
         }
 
 
+        @Override
+        public void moveWhenPicked() {
+        }
 
         public void checkCollision() {
 
