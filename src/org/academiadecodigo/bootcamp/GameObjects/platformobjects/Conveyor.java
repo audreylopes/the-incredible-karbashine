@@ -31,4 +31,9 @@ public class Conveyor extends PlatformObject {
     public void move(MouseEvent mouseEvent) {
 
     }
+
+    @Override
+    public void click() {
+
+    }
 }

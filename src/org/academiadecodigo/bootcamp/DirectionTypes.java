@@ -9,35 +9,17 @@ public enum DirectionTypes {
     UP,
     DOWN;
 
-    public DirectionTypes rotateToLeft() {
+    public DirectionTypes fall() {
 
         switch (this) {
-            case UP:
-                return LEFT;
             case LEFT:
                 return DOWN;
             case RIGHT:
-                return UP;
-            case DOWN:
-                return RIGHT;
+                return DOWN;
             default:
                 return null;
         }
     }
 
-    public DirectionTypes rotateToRight() {
 
-        switch (this) {
-            case UP:
-                return RIGHT;
-            case LEFT:
-                return UP;
-            case RIGHT:
-                return DOWN;
-            case DOWN:
-                return LEFT;
-            default:
-                return null;
-        }
-    }
 }

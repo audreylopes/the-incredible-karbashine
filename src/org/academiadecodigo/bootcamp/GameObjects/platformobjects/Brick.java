@@ -33,4 +33,9 @@ public class Brick extends PlatformObject {
     public void show() {
 
     }
+
+    @Override
+    public void click() {
+
+    }
 }
