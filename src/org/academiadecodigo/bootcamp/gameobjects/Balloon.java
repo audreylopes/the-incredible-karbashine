@@ -1,7 +1,9 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
 import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.simplegraphics.mouse.Mouse;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
+import org.academiadecodigo.simplegraphics.mouse.MouseEventType;
 import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 
 /**
@@ -12,9 +14,13 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
 
     public Balloon(RepresentablePics picture) {
         super(picture);
+        mouse.addEventListener(MouseEventType.MOUSE_CLICKED);
     }
     private boolean collision;
     private DirectionTypes direction;
+    Mouse mouse;
+
+
 
     public void checkCollision(){
 
@@ -88,7 +94,7 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-
+        move(mouseEvent);
     }
 
     @Override
