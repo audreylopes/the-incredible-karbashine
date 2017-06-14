@@ -25,7 +25,6 @@ public class JumpObject extends GameObject implements Jumpable {
         for (int i = getX(); collision ; i++) {
 
             currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
-            //setY(currentY);
             setY(currentY);
             setX = i;
 

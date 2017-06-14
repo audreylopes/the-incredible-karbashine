@@ -44,4 +44,9 @@ public class MovingObject extends GameObject implements Movable{
     public void click() {
 
     }
+
+    @Override
+    public void moveWhenPicked() {
+
+    }
 }
