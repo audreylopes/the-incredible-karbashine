@@ -36,4 +36,9 @@ public class Candle extends GameObject implements Representable, Pickable{
     public void show() {
 
     }
+
+    @Override
+    public void click() {
+
+    }
 }

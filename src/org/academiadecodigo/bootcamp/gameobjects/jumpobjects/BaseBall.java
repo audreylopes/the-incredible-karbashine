@@ -1,7 +1,7 @@
 package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
 
 import org.academiadecodigo.bootcamp.*;
-import org.academiadecodigo.bootcamp.Field.FieldPosition;
+import org.academiadecodigo.bootcamp.jumptests.JumpObject;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**

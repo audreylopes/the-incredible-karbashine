@@ -32,7 +32,7 @@ public class SimpleGfxBackgroundField extends AbstractBackgroundField{
     public void init() {
         rectangle = new Rectangle(10,10,1000,800);
         rectangle.draw();
-        Picture background
+        Picture background;
 
 
     }

@@ -31,7 +31,7 @@ public class Balloon extends MovingObject implements Movable {
 
     @Override
     public void moveRight() {
-        direction.rotateToRight();
+        direction.fall();
         if (getCollisionChecker().checksCollision(this)) {
             collision = true;
         }
@@ -39,7 +39,7 @@ public class Balloon extends MovingObject implements Movable {
 
     @Override
     public void moveLeft() {
-        direction.rotateToLeft();
+        direction.fall();
         if (getCollisionChecker().checksCollision(this)) {
             collision = true;
         }
