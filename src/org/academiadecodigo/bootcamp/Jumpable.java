@@ -8,4 +8,5 @@ public interface Jumpable {
     void jumpRight(int heigth, int slope);
 
     void jumpLeft(int heigth, int slope);
+
 }

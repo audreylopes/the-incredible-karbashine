@@ -2,6 +2,7 @@ package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
 
 import org.academiadecodigo.bootcamp.*;
 import org.academiadecodigo.bootcamp.Field.FieldPosition;
+import org.academiadecodigo.bootcamp.jumptests.JumpObject;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
@@ -50,18 +51,15 @@ public class BaseBall extends JumpObject implements Movable, Jumpable, Represent
     }
 
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
 
     @Override
     public void jumpLeft(int heigth, int slope) {
 
     }
 
+
     @Override
-    public void click() {
+    public void hide() {
 
     }
 }

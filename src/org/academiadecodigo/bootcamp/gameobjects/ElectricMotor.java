@@ -31,8 +31,9 @@ public class ElectricMotor extends GameObject implements Representable, Pickable
 
     }
 
+
     @Override
-    public void move(MouseEvent mouseEvent) {
+    public void moveWhenPicked() {
 
     }
 }

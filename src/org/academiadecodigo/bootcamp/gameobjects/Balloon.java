@@ -14,11 +14,11 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 
         private boolean collision;
         private DirectionTypes direction;
-        Clicker clicker;
+        Picker picker;
 
         public Balloon(RepresentablePics picture) {
             super(picture);
-            clicker = new Clicker(this);
+            picker = new Picker(this);
 
         }
 
@@ -26,8 +26,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 
         public void checkCollision() {
 
-
-
+        }
 
 
 
@@ -36,22 +35,24 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
         public DirectionTypes getDirectionType() {
             return this.direction;
         }
-
-        @Override
-        public void moveRight() {
-            direction.rotateToRight();
-            if (getCollisionChecker().checksCollision(this)) {
-                collision = true;
-            }
+    @Override
+    public void moveRight() {
+        direction.fall();
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
         }
+    }
 
-        @Override
-        public void moveLeft() {
-            direction.rotateToLeft();
-            if (getCollisionChecker().checksCollision(this)) {
-                collision = true;
-            }
+
+    @Override
+    public void moveLeft() {
+        direction.fall();
+        if (getCollisionChecker().checksCollision(this)) {
+            collision = true;
         }
+    }
+
+
 
         @Override
         public void moveDown() {
@@ -72,25 +73,11 @@ import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
         }
 
 
-        @Override
-        public void move(MouseEvent mouseEvent) {
 
 
-        }
 
-        @Override
-        public void click() {
-
-        }
-
-        @Override
-        public void whenClick() {
-
-
-        }
 /*
    ____________ POR AGORA ESTÃO IMPLEMENTADOS NA CLASSE REPRESENTABLEPICS ___________
  */
 
-    }
 }

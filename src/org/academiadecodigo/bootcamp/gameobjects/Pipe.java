@@ -11,22 +11,14 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Pipe extends GameObject {
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 05b80f357128b7666cde46d5dd9c4a131f5f2f82
     public Pipe(RepresentablePics picture) {
         super(picture);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
-
 
     @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }

@@ -17,10 +17,7 @@ public class Brick extends GameObject implements Representable, Pickable{
         super(picture);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
 
     @Override
     public int getX() {
@@ -34,6 +31,12 @@ public class Brick extends GameObject implements Representable, Pickable{
 
     @Override
     public void show() {
+
+    }
+
+
+    @Override
+    public void moveWhenPicked() {
 
     }
 }

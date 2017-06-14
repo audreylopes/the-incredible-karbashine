@@ -18,6 +18,10 @@ public abstract class GameObject implements Representable, Pickable {
         this.picture = picture;
     }
 
+    public GameObject() {
+
+    }
+
     public Position getPosition(){
         return position;
     }
@@ -30,6 +34,10 @@ public abstract class GameObject implements Representable, Pickable {
         return collisionChecker;
     }
 
+    protected void setPosition(int x, int y){
+        this.position.setX(x);
+        this.position.setY(y);
+    }
 
     @Override
     public int getX() {

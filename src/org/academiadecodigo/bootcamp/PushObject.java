@@ -17,7 +17,9 @@ public class PushObject extends GameObject  {
 
 
     private boolean getCollision(){
-       return false;
+
+return false;
+
     }
 
 
@@ -29,14 +31,8 @@ public class PushObject extends GameObject  {
 
     }
 
-
     @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }

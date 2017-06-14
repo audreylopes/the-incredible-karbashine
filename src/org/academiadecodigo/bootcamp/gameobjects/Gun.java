@@ -12,10 +12,7 @@ public class Gun extends PushObject implements Representable, Pickable{
         super(picture);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
 
     @Override
     public int getX() {

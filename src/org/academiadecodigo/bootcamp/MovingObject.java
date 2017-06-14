@@ -8,6 +8,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class MovingObject extends GameObject implements Movable{
 
     public MovingObject(RepresentablePics picture) {
+        super();
     }
 
     @Override
@@ -35,15 +36,9 @@ public class MovingObject extends GameObject implements Movable{
         return false;
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
 
-    @Override
-    public void click() {
 
-    }
 
     @Override
     public void moveWhenPicked() {

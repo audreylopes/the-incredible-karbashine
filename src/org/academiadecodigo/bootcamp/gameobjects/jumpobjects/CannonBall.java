@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
 
 import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.bootcamp.jumptests.JumpObject;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
@@ -42,13 +43,4 @@ public class CannonBall extends JumpObject implements Movable, Jumpable, Represe
 
 
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void click() {
-
-    }
 }

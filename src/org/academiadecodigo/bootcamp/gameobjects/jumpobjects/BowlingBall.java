@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.gameobjects.jumpobjects;
 
 import org.academiadecodigo.bootcamp.*;
+import org.academiadecodigo.bootcamp.jumptests.JumpObject;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
@@ -14,10 +15,7 @@ public class BowlingBall extends JumpObject implements Movable  {
     }
 
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
 
 
     @Override
@@ -45,8 +43,5 @@ public class BowlingBall extends JumpObject implements Movable  {
         return false;
     }
 
-    @Override
-    public void click() {
 
-    }
 }

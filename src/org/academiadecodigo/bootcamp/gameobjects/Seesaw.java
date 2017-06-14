@@ -15,14 +15,9 @@ public class Seesaw extends GameObject {
         super(picture);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
-
 
     @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }
