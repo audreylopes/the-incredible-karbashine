@@ -2,11 +2,12 @@ package org.academiadecodigo.bootcamp.gameobjects;
 
 import org.academiadecodigo.bootcamp.*;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
+import org.academiadecodigo.simplegraphics.mouse.MouseHandler;
 
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class Balloon extends GameObject implements Representable, Movable, Pickable {
+public class Balloon extends GameObject implements Representable, Movable, Pickable,MouseHandler {
 
 
     public Balloon(RepresentablePics picture) {
@@ -82,6 +83,16 @@ public class Balloon extends GameObject implements Representable, Movable, Picka
 
     @Override
     public void show() {
+
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent mouseEvent) {
 
     }
 }
