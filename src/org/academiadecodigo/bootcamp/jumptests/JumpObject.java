@@ -31,6 +31,8 @@ public class JumpObject extends GameObject implements Jumpable {
         for (int i = getX(); collision ; i++) {
 
             currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
+            setY(currentY);
+            setX = i;
 
             super.setPosition(i,currentY);
 
@@ -57,13 +59,10 @@ public class JumpObject extends GameObject implements Jumpable {
 
 
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
 
     @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }

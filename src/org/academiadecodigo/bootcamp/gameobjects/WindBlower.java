@@ -8,14 +8,14 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class WindBlower extends PushObject implements Representable, Pickable {
 
+
+    Picker picker;
     public WindBlower(RepresentablePics picture) {
         super(picture);
+        picker = new Picker(this);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
 
     @Override
     public int getX() {

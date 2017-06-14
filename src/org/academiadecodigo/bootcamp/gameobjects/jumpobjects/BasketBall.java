@@ -43,13 +43,4 @@ public class BasketBall extends JumpObject implements Movable {
 
 
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void click() {
-
-    }
 }

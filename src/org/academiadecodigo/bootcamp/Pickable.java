@@ -7,5 +7,5 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public interface Pickable {
 
-    void move();
+    void moveWhenPicked();
 }

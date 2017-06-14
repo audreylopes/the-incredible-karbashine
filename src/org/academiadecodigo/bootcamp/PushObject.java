@@ -30,9 +30,13 @@ public class PushObject extends GameObject {
         }
 =======
     private boolean getCollision(){
+<<<<<<< HEAD
 
 return false;
 >>>>>>> 294bcbb061614a0e5859e1ded69ac2bee46c3d13
+=======
+        return false;
+>>>>>>> 1cabc321b9a6389f5bab7aba4181acfaaf0f09ec
 
     }
 
@@ -68,6 +72,7 @@ return false;
         }
     }
 
+<<<<<<< HEAD
 
 
 
@@ -76,8 +81,10 @@ return false;
 
     }
 
+=======
+>>>>>>> 1cabc321b9a6389f5bab7aba4181acfaaf0f09ec
     @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }

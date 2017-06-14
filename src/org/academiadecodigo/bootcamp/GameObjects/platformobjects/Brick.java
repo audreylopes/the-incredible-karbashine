@@ -10,14 +10,16 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class Brick extends PlatformObject {
 
 
+    Picker picker;
+
     public Brick(RepresentablePics picture) {
         super(picture);
+        picker = new Picker(this);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
+
+
 
     @Override
     public int getX() {
@@ -34,8 +36,9 @@ public class Brick extends PlatformObject {
 
     }
 
+
     @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }

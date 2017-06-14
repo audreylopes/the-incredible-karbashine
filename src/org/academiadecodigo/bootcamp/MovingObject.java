@@ -36,13 +36,12 @@ public class MovingObject extends GameObject implements Movable{
         return false;
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
+
+
 
     @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }

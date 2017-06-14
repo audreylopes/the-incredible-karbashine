@@ -1,9 +1,6 @@
 package org.academiadecodigo.bootcamp.gameobjects;
 
-import org.academiadecodigo.bootcamp.GameObject;
-import org.academiadecodigo.bootcamp.Pickable;
-import org.academiadecodigo.bootcamp.Representable;
-import org.academiadecodigo.bootcamp.RepresentablePics;
+import org.academiadecodigo.bootcamp.*;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
@@ -11,22 +8,16 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
  */
 public class Pipe extends GameObject {
 
-<<<<<<< HEAD
+    Picker picker;
 
-=======
->>>>>>> 05b80f357128b7666cde46d5dd9c4a131f5f2f82
     public Pipe(RepresentablePics picture) {
         super(picture);
-    }
-
-    @Override
-    public void move(MouseEvent mouseEvent) {
-
+        picker = new Picker(this);
     }
 
 
     @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }
