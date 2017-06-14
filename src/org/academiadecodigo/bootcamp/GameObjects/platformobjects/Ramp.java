@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.gameobjects;
+package org.academiadecodigo.bootcamp.GameObjects.platformobjects;
 
 import org.academiadecodigo.bootcamp.*;
 import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
@@ -6,7 +6,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class Ramp extends GameObject {
+public class Ramp extends PlatformObject {
 
     Picker picker;
 
