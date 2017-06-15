@@ -48,13 +48,9 @@ public class PlatformObject extends GameObject {
 
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
 
     @Override
-    public void click() {
+    public void moveWhenPicked() {
 
     }
 }
