@@ -25,6 +25,9 @@ public class PlatformObject extends GameObject {
     }
 
     public int getWidth(){
+
+        width = rightLimit.getX() - leftLimit.getX();
+
         return width;
     }
 

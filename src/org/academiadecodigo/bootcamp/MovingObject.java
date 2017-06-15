@@ -27,34 +27,40 @@ public class MovingObject extends GameObject implements Movable {
     @Override
     public void moveRight(PlatformObject platformObject, int x, int y) {
 
-        int PosX = x;
-        int PosY = y;
+        //int PosX = x;
+        //int PosY = y;
+
 
         while (x < platformObject.getWidth()) {
             x++;
             setPosition(x, y);
         }
-
+        if(platformObject.getX() + platformObject.getWidth() == x ){
+            moveDown(x,y);
+        }
 
     }
 
     @Override
     public void moveLeft(PlatformObject platformObject, int x, int y) {
 
-        int PosX = x;
-        int PosY = y;
+        //int PosX = x;
+        //int PosY = y;
 
         while (x > platformObject.getWidth()) {
             x--;
             setPosition(x, y);
+        }
+        if(platformObject.getX() == x ){
+            moveDown(x,y);
         }
     }
 
     @Override
     public void moveDown(int x, int y) {
 
-        int PosX = x;
-        int PosY = y;
+        //int PosX = x;
+        //int PosY = y;
 
         while (y < LevelField.getHeight()) {  //MUST IMPLEMENT IN LEVELFIELD
             y++;

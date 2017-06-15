@@ -17,7 +17,6 @@ public class PushObject extends GameObject {
 
     public PushObject(RepresentablePics picture) {
         super(picture);
-        //collisionChecker = new CollisionChecker(); // ARRAY MISSING
         platformObject = new PlatformObject();  //REPRESENTABLE PICTURE MISSING
 
     }
@@ -34,7 +33,7 @@ public class PushObject extends GameObject {
 
 
 
-    public void pushRight(GameObject gameObject, int x, int y) {
+    public void pushRight(MovingObject movingObject, int x, int y) {
 
         if (collision) {
 
@@ -42,17 +41,19 @@ public class PushObject extends GameObject {
             int initialPosY = y;
 
 
+            while (x < platformObject.getWidth()) {
+                x++;
+                movingObject.setPosition(x, y);
+            }
 
-
-            int pushDistance = platformObject.getWidth();
-            int finalPosX = x + pushDistance;
-            int finalPosY = y;
-
+            if(platformObject.getX() + platformObject.getWidth() == x ){
+                movingObject.moveDown(x,y);
+            }
 
         }
     }
 
-    public void pushLeft(GameObject gameObject, int x, int y) {
+    public void pushLeft(MovingObject movingObject, int x, int y) {
 
 
         if (collision) {
@@ -61,9 +62,14 @@ public class PushObject extends GameObject {
             int initialPosY = y;
 
 
-            int pushDistance =  platformObject.getWidth();
-            int finalPosX = x - pushDistance;
-            int finalPosY = y;
+            while (x > platformObject.getWidth()) {
+                x--;
+                movingObject.setPosition(x, y);
+            }
+
+            if(platformObject.getX() == x ){
+               movingObject.moveDown(x,y);
+            }
         }
     }
 
