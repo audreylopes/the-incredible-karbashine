@@ -12,10 +12,7 @@ public class Gun extends PushObject {
         super(picture);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
 
 
 }

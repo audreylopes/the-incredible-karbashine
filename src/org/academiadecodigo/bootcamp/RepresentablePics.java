@@ -10,7 +10,7 @@ public class RepresentablePics implements Representable{
     private Picture p;
 
     public RepresentablePics(String str) {
-        this.p = new Picture(0, 0, str);
+        this.p = new Picture(100, 100, str);
     }
 
     @Override
@@ -25,6 +25,7 @@ public class RepresentablePics implements Representable{
 
     @Override
     public void show() {
+        System.out.println("Bigpig");
         p.draw();
     }
 

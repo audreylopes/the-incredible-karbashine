@@ -13,14 +13,5 @@ public class WindBlower extends PushObject   {
         super(picture);
     }
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
 
-    }
-
-
-    @Override
-    public void click() {
-
-    }
 }

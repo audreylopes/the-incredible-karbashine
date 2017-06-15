@@ -14,7 +14,7 @@ public class JumpObject extends GameObject implements Jumpable {
     private boolean collision;
 
     public JumpObject(RepresentablePics picture) {
-        super(picture);
+        //super(picture);
     }
 
     public void checkCollision(){
@@ -31,8 +31,8 @@ public class JumpObject extends GameObject implements Jumpable {
         for (int i = getX(); collision ; i++) {
 
             currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
-            setY(currentY);
-            setX = i;
+            //setY(currentY);
+            //setX = i;
 
             super.setPosition(i,currentY);
 

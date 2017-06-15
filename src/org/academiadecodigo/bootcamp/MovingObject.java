@@ -8,7 +8,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 public class MovingObject extends GameObject implements Movable{
 
     public MovingObject(RepresentablePics picture) {
-        super();
+        super(picture);
     }
 
     @Override
