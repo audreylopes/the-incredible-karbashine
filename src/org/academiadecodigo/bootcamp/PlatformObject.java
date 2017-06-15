@@ -56,4 +56,9 @@ public class PlatformObject extends GameObject {
     public void moveWhenPicked() {
 
     }
+
+    @Override
+    public void moveWhenPicked() {
+
+    }
 }

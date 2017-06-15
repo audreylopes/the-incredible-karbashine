@@ -76,7 +76,6 @@ public class PushObject extends GameObject {
 
 
 
-
     @Override
     public void moveWhenPicked() {
 
