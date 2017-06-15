@@ -5,8 +5,7 @@ import org.academiadecodigo.bootcamp.gameobjects.jumpobjects.BaseBall;
 import org.academiadecodigo.bootcamp.gameobjects.jumpobjects.BowlingBall;
 import org.academiadecodigo.bootcamp.gameobjects.jumpobjects.CannonBall;
 import org.academiadecodigo.bootcamp.gameobjects.pushobjects.BoxGlove;
-import org.academiadecodigo.simplegraphics.pictures.Picture;
-
+import org.academiadecodigo.bootcamp.gameobjects.platformobjects.*;
 /**
  * Created by codecadet on 12/06/17.
  */

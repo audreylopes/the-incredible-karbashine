@@ -23,22 +23,11 @@ public class PushObject extends GameObject {
     }
 
 
-<<<<<<< HEAD
     private boolean getCollision(GameObject gameObject) {
 
         if (collisionChecker.checksCollision(gameObject)) {
             collision = true;
         }
-=======
-    private boolean getCollision(){
-<<<<<<< HEAD
-
-return false;
->>>>>>> 294bcbb061614a0e5859e1ded69ac2bee46c3d13
-=======
-        return false;
->>>>>>> 1cabc321b9a6389f5bab7aba4181acfaaf0f09ec
-
     }
 
 
@@ -73,8 +62,6 @@ return false;
         }
     }
 
-<<<<<<< HEAD
-
 
 
     @Override
@@ -82,8 +69,6 @@ return false;
 
     }
 
-=======
->>>>>>> 1cabc321b9a6389f5bab7aba4181acfaaf0f09ec
     @Override
     public void moveWhenPicked() {
 

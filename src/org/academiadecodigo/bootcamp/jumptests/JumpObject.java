@@ -3,7 +3,7 @@ package org.academiadecodigo.bootcamp.jumptests;
 import org.academiadecodigo.bootcamp.GameObject;
 import org.academiadecodigo.bootcamp.Jumpable;
 import org.academiadecodigo.bootcamp.RepresentablePics;
-import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
+
 
 /**
  * Created by codecadet on 13/06/2017.
@@ -31,11 +31,8 @@ public class JumpObject extends GameObject implements Jumpable {
         for (int i = getX(); collision ; i++) {
 
             currentY = (int)Math.pow((i / slope) - heigth, 2);            //FÓRMULA DA PARABOLA
-            //setY(currentY);
-            //setX = i;
 
             super.setPosition(i,currentY);
-
 
             checkCollision();                       //VAI CHECKANDO SEMPRE SE CHOCA COM ALGUM OBJECTO
         }
@@ -56,9 +53,6 @@ public class JumpObject extends GameObject implements Jumpable {
         }
 
     }
-
-
-
 
 
     @Override

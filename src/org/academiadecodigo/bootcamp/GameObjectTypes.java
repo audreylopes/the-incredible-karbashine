@@ -5,7 +5,6 @@ package org.academiadecodigo.bootcamp;
  */
 public enum GameObjectTypes {
 
-    BASKETBALL,
     BASEBALL,
     BOWLINGBALL,
     CANNONBAL,
@@ -17,7 +16,6 @@ public enum GameObjectTypes {
     BOXGLOVES,
     GUN,
     WINDBLOWER,
-    CANNON,
     CANDLE,
     CONVEYOR,
     MOTOR,
