@@ -17,10 +17,11 @@ public class PushObject extends GameObject {
 
     public PushObject(RepresentablePics picture) {
         super(picture);
-        collisionChecker = new CollisionChecker(); // ARRAY MISSING
+        //collisionChecker = new CollisionChecker(); // ARRAY MISSING
         platformObject = new PlatformObject();  //REPRESENTABLE PICTURE MISSING
 
     }
+
 
 
     private boolean getCollision(GameObject gameObject) {
@@ -28,7 +29,9 @@ public class PushObject extends GameObject {
         if (collisionChecker.checksCollision(gameObject)) {
             collision = true;
         }
+        return false;
     }
+
 
 
     public void pushRight(GameObject gameObject, int x, int y) {
@@ -37,9 +40,11 @@ public class PushObject extends GameObject {
 
             int initialPosX = x;
             int initialPosY = y;
-            int distance;
 
-            int pushDistance = distance > platformObject.getWidth() ? platformObject.getWidth() : distance;
+
+
+
+            int pushDistance = platformObject.getWidth();
             int finalPosX = x + pushDistance;
             int finalPosY = y;
 
@@ -54,9 +59,9 @@ public class PushObject extends GameObject {
 
             int initialPosX = x;
             int initialPosY = y;
-            int distance;
 
-            int pushDistance = distance < platformObject.getWidth() ? platformObject.getWidth() : distance;
+
+            int pushDistance =  platformObject.getWidth();
             int finalPosX = x - pushDistance;
             int finalPosY = y;
         }
@@ -64,10 +69,6 @@ public class PushObject extends GameObject {
 
 
 
-    @Override
-    public void move(MouseEvent mouseEvent) {
-
-    }
 
     @Override
     public void moveWhenPicked() {
