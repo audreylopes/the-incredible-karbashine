@@ -9,8 +9,6 @@ public interface FieldPosition {
 
     int getY();
 
-    void show();
-
     void hide();
 
 

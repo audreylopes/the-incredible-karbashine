@@ -26,10 +26,7 @@ public class Position implements FieldPosition {
         this.y = newY;
     }
 
-    @Override
-    public void show() {
 
-    }
 
     @Override
     public void hide() {

@@ -54,11 +54,8 @@ public class PlatformObject extends GameObject {
 
     @Override
     public void moveWhenPicked() {
-
+        throw new UnsupportedOperationException();
     }
 
-    @Override
-    public void moveWhenPicked() {
 
-    }
 }

@@ -9,7 +9,10 @@ public class Tester {
 
     public static void main(String[] args) {
 
-        Rectangle r = new Rectangle(10,10,1000,800);
-        r.draw();
+       // Rectangle r = new Rectangle(10,10,1000,800);
+       // r.draw();
+
+        LevelStart levelStart = new LevelStart(false);
+
     }
 }

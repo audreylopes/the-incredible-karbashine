@@ -1,26 +1,19 @@
 package org.academiadecodigo.bootcamp.SimpleGfx;
 
-import org.academiadecodigo.bootcamp.Field.AbstractBackgroundField;
 import org.academiadecodigo.bootcamp.Field.LevelField;
-import org.academiadecodigo.bootcamp.Field.ScoreField;
-import org.academiadecodigo.bootcamp.Field.SideMenuField;
-import org.academiadecodigo.simplegraphics.graphics.*;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
-
-import java.awt.*;
 
 /**
  * Created by codecadet on 13/06/17.
  */
-public class SimpleGfxBackgroundField extends AbstractBackgroundField{
+public class SimpleGfxBackgroundField{
 
     Rectangle rectangle;
     private int x;
     private int y;
     LevelField levelField;
-    ScoreField scoreField;
-    SideMenuField sideMenuField;
+
 
 
     public SimpleGfxBackgroundField(){

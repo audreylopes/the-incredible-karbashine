@@ -17,7 +17,7 @@ public class PushObject extends GameObject {
 
     public PushObject(RepresentablePics picture) {
         super(picture);
-        platformObject = new PlatformObject();  //REPRESENTABLE PICTURE MISSING
+       // platformObject = new PlatformObject();  //REPRESENTABLE PICTURE MISSING
 
     }
 

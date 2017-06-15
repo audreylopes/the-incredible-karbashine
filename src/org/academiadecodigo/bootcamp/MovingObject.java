@@ -62,11 +62,11 @@ public class MovingObject extends GameObject implements Movable {
         //int PosX = x;
         //int PosY = y;
 
-        while (y < LevelField.getHeight()) {  //MUST IMPLEMENT IN LEVELFIELD
+        /*while (y < LevelField.getHeight()) {  //MUST IMPLEMENT IN LEVELFIELD
             y++;
             setPosition(x, y);
 
-        }
+        } */
     }
 
     @Override

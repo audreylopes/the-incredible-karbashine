@@ -1,8 +1,6 @@
-package org.academiadecodigo.bootcamp.GameObjects.platformobjects;
+package org.academiadecodigo.bootcamp.gameobjects.platformobjects;
 
 import org.academiadecodigo.bootcamp.*;
-
-import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 
 /**
  * Created by codecadet on 13/06/2017.

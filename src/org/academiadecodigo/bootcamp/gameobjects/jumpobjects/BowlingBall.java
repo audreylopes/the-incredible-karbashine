@@ -7,7 +7,7 @@ import org.academiadecodigo.simplegraphics.mouse.MouseEvent;
 /**
  * Created by codecadet on 13/06/2017.
  */
-public class BowlingBall extends JumpObject implements Movable  {
+public class BowlingBall extends JumpObject  {
 
 
     public BowlingBall(RepresentablePics picture) {

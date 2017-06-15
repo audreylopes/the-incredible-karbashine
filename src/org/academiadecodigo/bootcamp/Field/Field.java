@@ -7,10 +7,10 @@ public interface Field {
 
     void init();
 
-    FieldPosition makePosition();
+    //void setPosition(FieldPosition);
 
     FieldPosition getPosition();
 
-    void show();
+
 
 }
